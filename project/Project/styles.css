@@ -1,0 +1,233 @@
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		:root {
+		--main-color:#9575cd;
+		--second-color:#adcd75 ;
+		}
+
+
+		header {
+			width: 100%;
+			padding: 1rem 2rem;
+			background-color: var(--main-color);
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+		}
+		nav > a {
+			padding: 0.5rem;
+			border: 2px solid transparent;
+			text-decoration: none;
+			font-size: 1.5rem;
+			border-radius: 4px;
+			color: white;
+			transition: 0.3 ease;
+		}
+		nav > a:hover {
+			background-color: #906fcb;
+			border-bottom: 4px solid white;
+		}
+		.active {
+			border-bottom: 4px solid white;
+		}
+
+		img {
+			width:100%;
+			height: auto;
+		}
+		.header_img_container {
+			width: 100px ;	 	
+		}
+
+		main {
+			width: 90%;
+			margin: 2rem auto;
+		}
+		.hero {
+			display: flex;
+			align-items: center;
+		}
+		.hero-left, .hero-right {
+			flex: 50%;
+			width: 50%;
+		}
+		.hero-right {
+			min-height: 500px;
+		}
+		.hero-right > img {
+			width: 100%
+			height: 500px;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+		.hero-left > h1 {
+			font-size: 2.5rem;
+			text-transform: uppercase;
+			letter-spacing: 0.05rem;
+			padding-right: 1rem;
+			line-height: 161%;
+		}
+		.quote {
+			width: 50%;
+			margin: 2rem auto;
+		}
+
+			.quote > h2 {
+			text-align: center;
+		    font-size: 1.2rem;
+		    font-weight: 500;
+		    height: fit-content;
+		    position: relative;
+
+		}
+		.quote > h2::after {
+			content: "\201D";
+			line-height: 5rem;
+			position: absolute;
+			right: -5px;
+			font-size: 5rem;
+		}
+		.quote > h2::before {
+			content: "\201C";
+			line-height: 5rem;
+			position: absolute;
+			left: -30px;
+			top: -30px;
+			font-size: 5rem;
+		}
+
+
+		.video {
+			width: 100%;
+			margin-top: 4rem;
+		}
+		.video > video {
+			width: 100%;
+		
+		}
+.container {
+    display: flex;
+
+    /* OPTIONAL: Reverse the order of image and content */
+    flex-direction: row-reverse;
+
+    /* OPTIONAL: Spacing between items */
+    margin: 16px 0;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.container__image > img{
+    width: 356px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px
+}
+
+.container__feature {
+    /* Take the remaining width */
+    flex: 1;
+}
+.container:nth-of-type(odd) {
+	flex-direction: row;
+}
+.swiper {
+  width: 600px;
+  height: 300px;
+  margin: 40px;
+  border-radius:10px;
+ }
+ .sw__button {
+	position: absolute !important;
+    top: 50% !important;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+ }
+ .sw__button:active {
+            transform: scale(0.8);
+            box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+
+  }
+  .type-hero {
+  	display: flex;
+  	align-items: center;
+  	gap: 1rem;
+  }
+  .skills {
+  	display: flex;
+  	align-items: center;
+  	gap: 1rem;
+  }
+
+  footer {
+  	padding: 2rem 3rem;
+  	width:100%;
+  	background-color: var(--main-color);
+  }
+
+  .footer-container {
+  	display: flex;
+  	gap: 1rem;
+  	align-items: center;
+  	justify-content: center;
+  	flex-direction: column;
+  }
+  .footer-container > h3 {
+  		color: white;
+  		font-size: 1.1rem;
+  }
+
+  .icons-container {
+  	display: flex;
+  	gap: 0.3rem;
+  	flex-wrap: wrap;
+  }
+  .icons-container > img {
+  	width: 48px;
+  	height: 48px;
+  	object-fit: cover;
+  }
+  .form{ 
+      width: 700px;  
+     display: flex;
+      flex-direction: row;
+       gap: 0.5rem;
+        padding: 4rem;
+         border-radius: 1rem;
+      justify-content: center;  
+         align-items: center; 
+         margin: 2rem auto;
+          background-color: var(--main-color);
+  	     box-shadow: px 4px 4px rgba(0,0,0,0.3);
+
+            }
+
+	.form > textarea{  
+	   padding: 0.5rem 1rem;  
+  	border-radius: 4px; 
+  width: 50%;  
+ border: none;   
+   height: 50px; 
+   } 
+   .form > input{ 
+   padding: 0.5rem 1rem; 
+   border-radius: 4px; 
+   height: 50px; 
+   border: none; 
+        }
+     .form > button{     
+ 	padding: 0.5rem 1rem;   
+ 	  height: 50px;   
+ 	    border-radius: 4px;   
+	      border: none; 
+           height: 100%; }
