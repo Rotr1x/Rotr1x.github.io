@@ -11,7 +11,11 @@
 			background-color: var(--second-color);
 		}
 		.sign {
-			align-items: center;
+			align-items: flex-end;
+			margin-bottom: 225px;
+
+		}
+		.footer-container {
 
 		}
 	</style>
@@ -22,7 +26,7 @@
 		<nav>
 				<a href="index.html">Главная</a>
 				<a href="gallery.html">Галерея</a>
-				<a href="регистрация.html" class="active">Регистрация</a>
+				<a href="регистрация.html" class="active">Помощь</a>
 	
 		</nav>
 		<div class="header_img_container">
@@ -35,29 +39,38 @@
 
 		</div>
 	</header>
-	
-		<main class="sign">
+	<main>
+
+		<div class="sign">
 			<form class="form" action="https://formspree.io/f/myyvywry"
   method="POST">
             <input type="email" name="email" placeholder="Email">
-        <textarea rows="3" name="message" placeholder="Password"></textarea>
+        <textarea rows="3" name="message" placeholder="Обращение"></textarea>
             <button type="submit">Send</button>
         </form>
+    </div>
+	
+	</main>
+	<footer>
+		<div class="footer-container">
 			
+			<h3></h3>
+
+			<div class="icons-container">
+				<a href="https://vk.com/1artembebra1">
+					<img src="vk.png" alt="">
+				</a>
+
+				<a href="https://www.twitch.tv/rotr1x_">
+				<img  src="twitch.png" alt="">
+			</a>
+			</div>
+
+			<p>copyright &copy; 2022 Artem Chirikhin</p>
 
 
 
-
-
-
-
-
-
-		</main>			
-
-
-
-		
+		</div>
 
 	</footer>
 </body>
